@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'consume-lib' title`, () => {
+  it(`should have the 'angular-library' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('consume-lib');
+    expect(app.title).toEqual('angular-library');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, consume-lib');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-library');
   });
 });

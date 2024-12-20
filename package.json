@@ -1,5 +1,5 @@
 {
-  "name": "consume-lib",
+  "name": "angular-library",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:consume-lib": "node dist/consume-lib/server/server.mjs"
+    "serve:ssr:angular-library": "node dist/angular-library/server/server.mjs"
   },
   "private": true,
   "dependencies": {
