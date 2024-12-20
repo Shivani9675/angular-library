@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { DataTransferService } from 'show_log_message';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'consume-lib';
+  title = 'Angular-lib';
+
+  constructor(private messageTransferServices:DataTransferService){
+    this.messageTransferServices.logMessage("Hello Everyone!")
+  }
 }
